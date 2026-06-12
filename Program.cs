@@ -7,7 +7,7 @@ builder.WebHost.UseUrls($"http://0.0.0:{port}");
 
 var app = builder.Build();
 
-app.MapGet("/getnum", (string? x, string? y, HttpContext context) => {
+app.MapGet("/dpgomberg_gmail_com", (string? x, string? y, HttpContext context) => {
   if (string.IsNullOrWhiteSpace(x) || string.IsNullOrWhiteSpace(y) || 
       !BigInteger.TryParse(x, out BigInteger nx) || nx <= 0 ||
       !BigInteger.TryParse(y, out BigInteger ny) || ny <= 0) {
